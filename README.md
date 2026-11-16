@@ -12,6 +12,7 @@ GitHub Pages muss unter **Settings → Pages → Build and deployment → Source
 
 - `dist/`: unmittelbar veröffentlichbare statische App mit 14 vorbereiteten Leitfragen.
 - `tests/`: automatisierte Tests für Zeitberechnung, Protokoll und Wiederherstellung.
+- [`integrations/davinci-resolve/`](integrations/davinci-resolve/): Python-Script, das den CSV-Export als Fragenmarker in eine Resolve-Timeline importiert, mit Sync-Abgleich, Vorschau und Installationsanleitung.
 - `.github/workflows/deploy-pages.yml`: Prüfung und Pages-Deployment.
 - `PRUEFUNG.md`: dokumentierter Prüfstand der ersten App-Version.
 

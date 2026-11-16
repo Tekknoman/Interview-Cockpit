@@ -32,6 +32,8 @@ jobs:
           node --check dist/sw.js
       - name: Run application tests
         run: npm test
+      - name: Test DaVinci Resolve CSV importer
+        run: python3 -m unittest discover -s integrations/davinci-resolve/tests -v
       - name: Upload static website
         if: github.ref == 'refs/heads/prod' && github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
