@@ -137,3 +137,15 @@ Bei einer neuen App-Version `CACHE` in `sw.js` erhöhen. Ein neuer Service Worke
 - GitHub Pages: siehe Veröffentlichungsanleitung oben.
 
 Leitfaden: Interviewvorbereitung Markus Graf Colombo, fünf Themenbereiche A–E, 14 Fragen; drei Minuten Einstieg und zwei Minuten Abschluss zusätzlich zu 50 Minuten Leitfragen.
+
+### Resolve ohne Script: Marker-EDL
+
+Unter **Protokoll → Resolve EDL** lässt sich die aktuelle Sitzung direkt exportieren. Dort kann auch ein älteres Cockpit-CSV geladen werden, ohne die laufende Sitzung zu ersetzen. Bildrate (inklusive Drop-Frame-Auswahl), Timeline-Start und den Timeline-Timecode beim **Beginn des ersten Sync-Tons** einstellen. Der vorausgefüllte Sync-Timecode setzt voraus, dass die Aufnahme am Timeline-Anfang liegt; bei versetzten Clips den tatsächlichen Timecode übernehmen.
+
+Fragen werden als blaue Bereichsmarker, Clip-Markierungen als gelbe Punktmarker ausgegeben. Optional sind reine Punktmarker möglich. Pausen zählen zur Aufnahmezeit. Bei mehreren Sync-Punkten jedes Aufnahmesegment separat exportieren; ausgelassene Einträge werden angezeigt. Offene Fragen und Fragen, deren Ende in ein neues Segment fällt, erhalten einen Punktmarker. Einträge vor dem ersten Sync lassen sich nicht automatisch zuordnen. Gleiche Framepositionen werden in einem Marker zusammengefasst. Notizen werden dem Markertitel angehängt.
+
+In Resolve: **Timeline im Media Pool rechts anklicken → Timelines → Import → Timeline Markers from EDL**. Die EDL nicht als neue Schnitt-Timeline importieren. Vorhandene Marker an denselben Stellen vorher prüfen. Die eigentliche Aufnahme muss weiterhin anhand des Sync-Tons ausgerichtet werden; das EDL synchronisiert keine Medien. Der Import ist anhand des Resolve-Marker-EDL-Formats umgesetzt und automatisiert geprüft; ein Test in einer installierten Resolve-Version steht aus. Das [Python-Script](integrations/davinci-resolve/README.md) bleibt als Alternative erhalten.
+
+### Leseschrift
+
+Die App verwendet lokal eingebundenes **Atkinson Hyperlegible Next** (variable Schrift, SIL Open Font License unter `dist/fonts/OFL.txt`). Quelle: [Braille Institute](https://www.brailleinstitute.org/freefont/) und [Google Fonts](https://github.com/google/fonts/tree/main/ofl/atkinsonhyperlegiblenext). Die Schrift bleibt offline verfügbar. Im Fokusmodus: helle Schrift `#f5f5f5` auf Schwarz, weisse fett gesetzte Betonungen, normale Buchstabenabstände und Zeilenhöhe 1,32. Rot und Grün kennzeichnen weiterhin ausschliesslich die Zeitabweichung.

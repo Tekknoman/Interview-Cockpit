@@ -31,3 +31,9 @@ In Chromium überprüft:
 Kein physisches iPad und kein tatsächlicher Safari-/iPadOS-Gerätesperrtest. Bildschirm-Wake-Lock, Safari-Systemteilen, Betriebssystem-Speicherbereinigung und Audio-/Video-Latenzen müssen auf dem Zielgerät geprüft werden. Zeitberechnung für Hintergrund-/Sperrphasen ist automatisiert abgedeckt; eine absolute Datenverlustgarantie ist damit nicht verbunden.
 
 Dieser Bericht dokumentiert die lokale Prüfung vor dem ersten GitHub-Deployment. Im Repository wird `dist` über den GitHub-Pages-Workflow veröffentlicht. Den aktuellen Workflowstatus zeigt GitHub Actions.
+
+## EDL und Leseschrift
+
+- 24 Node-Tests und 16 Python-Tests erfolgreich, inklusive CSV-Roundtrip, Pausen, Sync-Segmente, kollidierende Marker und Drop-Frame-Grenzen.
+- Schrift lokal mit Lizenz eingebunden und in Offline-Cache aufgenommen. Service Worker auf v7 aktualisiert.
+- Resolve selbst ist in dieser Umgebung nicht installiert: tatsächlicher Markerimport dort noch zu prüfen.
