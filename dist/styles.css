@@ -9,3 +9,66 @@
 .navigation{position:sticky;bottom:0;z-index:4;background:var(--bg);padding-bottom:max(12px,env(safe-area-inset-bottom));margin-bottom:-12px}
 
 @media(max-width:850px){.shell{grid-template-rows:min-content 1fr}}
+
+/* Compact full-screen reading surface. The standard layout stays unchanged. */
+.focus-only{display:none}
+body.focus{color-scheme:dark;--bg:#000;--panel:#000;--line:#333;--text:#fff;--muted:#bbb;background:#000;color:#fff}
+.focus .focus-only{display:block}
+.focus .topbar{height:46px;padding:0 26px;background:#000;border-bottom:1px solid #262626;gap:12px}
+.focus .brand,.focus .saved,.focus .sidebar,.focus .timing,.focus .bridge,.focus .hint,.focus .next-preview,.focus .essential,.focus .visit-info,.focus kbd,.focus #marker-count{display:none}
+.focus #focus-title{font-size:12px;color:#bdbdbd;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:auto}
+.focus .top-actions{gap:4px}
+.focus .icon-button{height:40px;min-height:40px;width:40px;border-radius:6px;background:#000;color:#fff}
+.focus .quiet{min-height:36px;border:0;padding:0 8px;border-radius:6px;font-size:12px;color:#ccc}
+.focus .shell{display:block;max-width:none;min-height:calc(100dvh - 46px)}
+.focus main{padding:14px 26px 12px;max-width:none}
+.focus #live{max-width:none}
+.focus .focus-telemetry{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:13px}
+.focus-clock{min-width:0}
+.focus-clock-label{display:flex;align-items:baseline;justify-content:space-between;gap:10px;font-size:12px;line-height:1.4;margin-bottom:7px;font-variant-numeric:tabular-nums;color:#bdbdbd}
+.focus-clock-label b{font-weight:500;color:#fff;margin-left:7px}
+.time-delta{font-size:16px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.time-delta.early{color:#54ee86}.time-delta.late{color:#ff6666}.time-delta.on-time{color:#fff}
+.focus-time-track{height:4px;background:#333;position:relative;border-radius:1px}
+.focus-time-track i{height:100%;display:block;max-width:100%;border-radius:1px;background:#fff}
+.focus-time-track i.early{background:#54ee86}.focus-time-track i.late{background:#ff6666}
+#focus-plan-tick{position:absolute;width:2px;height:10px;top:-3px;background:white;transform:translateX(-1px);box-shadow:0 0 0 1px #000}
+.focus .progress-top{font-size:11px;line-height:1.4;margin-bottom:5px}
+.focus #position-label{color:#fff}.focus #progress-label{color:#aaa}
+.focus .progress-track{height:3px;background:#333;margin-bottom:14px;border-radius:1px}
+.focus .progress-track i{background:#fff;border-radius:1px}
+.focus .question-card{border:0;background:#000;border-radius:0;padding:0;overflow:visible}
+.focus .question-card:before{display:none}
+.focus .card-meta{gap:8px;margin:0;min-height:32px;position:relative}
+.focus .section-label{font-size:12px;font-weight:600;letter-spacing:.3px;color:#bdbdbd;text-transform:none}
+.focus #focus-bridge{margin-left:auto;font-size:12px;color:#bdbdbd}
+.focus #focus-bridge summary{cursor:pointer;min-height:36px;display:flex;align-items:center;gap:5px;list-style:none}
+.focus #focus-bridge summary:after{content:'＋';font-size:15px}
+.focus #focus-bridge[open] summary:after{content:'−'}
+.focus #focus-bridge summary::-webkit-details-marker{display:none}
+.focus #focus-bridge p{position:absolute;right:0;top:38px;z-index:8;max-width:min(520px,85vw);background:#151515;color:#fff;border:1px solid #555;padding:14px 18px;font-size:17px;line-height:1.5;box-shadow:0 8px 30px #0009}
+.focus #question-text{font-size:var(--focus-size,clamp(32px,calc(var(--question-size)*1.3),84px));line-height:1.2;font-weight:400;letter-spacing:-1px;margin:12px 0 22px;max-width:none;color:#fff}
+.focus #question-text strong{color:#fff;font-weight:800}
+.focus .followup-area{border-top:1px solid #333;padding-top:0}
+.focus .followup-toggle{min-height:34px;color:#aaa;font-size:11px;letter-spacing:.2px}
+.focus .followup-toggle span{font-size:16px}
+.focus .followup-item{color:#eee;font-size:clamp(18px,calc(var(--question-size)*.5),28px);line-height:1.4;padding-left:16px;margin:2px 0 8px}
+.focus .followup-item:before{color:#999}.focus .followup-item strong{color:#fff;font-weight:750}
+.focus .under-card{gap:8px;margin:10px 0;min-height:40px}
+.focus .marker-button{min-height:40px;padding:0 10px;border:0;background:#111;color:#eee;border-radius:6px}
+.focus .text-button{color:#bdbdbd;font-size:12px;min-height:40px;padding:0 8px}
+.focus #focus-pause-btn{display:block}
+.focus #focus-pause-btn[aria-pressed=true]{color:#fff;background:#252525;border-radius:6px}
+.focus .navigation{margin:0;padding:10px 0 max(8px,env(safe-area-inset-bottom));gap:12px;background:#000;border-color:#333;justify-content:space-between}
+.focus .back-button{border:0;color:#ccc;padding:0 10px;min-height:46px}
+.focus .primary{background:#fff;color:#000;border-radius:7px}
+.focus .next-button{min-height:46px;min-width:200px;padding:0 18px;margin-left:auto}
+.focus .resume-banner{padding:7px 12px;margin-bottom:10px;background:#111;color:#ddd;border:1px solid #444;font-size:11px}
+.focus #note-area{margin:8px 0}.focus label{color:#ddd}
+.focus textarea,.focus input,.focus.light textarea,.focus.light input{background:#111;color:#fff;border-color:#555}
+.focus dialog,.focus .modal-header{background:#111;color:#fff;border-color:#444}
+.focus .modal-copy,.focus .checkline{color:#ccc}
+.focus .message{border-color:#555;color:#ddd}
+.focus #toast{background:#fff;color:#000;border-color:#fff}
+@media(max-width:850px){.focus .topbar{height:44px;padding:0 18px}.focus .shell{min-height:calc(100dvh - 44px)}.focus main{padding:12px 18px}.focus #question-text{font-size:var(--focus-size,clamp(32px,calc(var(--question-size)*1.15),74px))}.focus .focus-telemetry{gap:18px}}
+@media(max-width:540px){.focus .topbar{padding:0 12px}.focus main{padding:10px 12px}.focus .focus-telemetry{gap:12px}.focus-clock-label{font-size:10px;flex-wrap:wrap;gap:3px}.focus-clock-label b{margin-left:3px}.time-delta{font-size:13px}.focus #question-text{font-size:var(--focus-size,clamp(30px,var(--question-size),64px));margin:10px 0 18px;letter-spacing:-.5px}.focus .section-label{font-size:11px}.focus .under-card{gap:1px}.focus .text-button{font-size:10px;padding:0 6px}.focus .next-button{min-width:150px;flex:0 1 auto}.focus #sync-btn{font-size:10px}.focus #focus-title{max-width:40vw}}

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {validateInterview,freshSession,stepsFor,start,pause,resume,move,finish,activeMs,stepSpent,addSync,recordingAt,event,protocolRows,csvFor,pack,unpack,validateSession,metrics} from '../dist/core.mjs';
+import {validateInterview,freshSession,stepsFor,start,pause,resume,move,finish,activeMs,stepSpent,addSync,recordingAt,event,protocolRows,csvFor,pack,unpack,validateSession,metrics,visualTiming} from '../dist/core.mjs';
 const template=JSON.parse(fs.readFileSync(new URL('../dist/interview.json',import.meta.url)));
 test('Leitfaden enthält 14 Fragen und exakt 55 Minuten inklusive Einstieg und Abschluss',()=>{const s=stepsFor(validateInterview(template));assert.equal(s.length,16);assert.equal(s.reduce((n,q)=>n+q.seconds,0),3300);assert.equal(s.filter(q=>q.kind==='question').length,14);});
 test('Bildschirmsperre / schlafender Browser: Uhr folgt Zeitankern, keinen Tick-Zählern',()=>{const s=freshSession(template,1000);start(s,2000);assert.equal(activeMs(s,602000),600000);const recovered=unpack(pack(s)).session;assert.equal(activeMs(recovered,3602000),3600000);});
@@ -19,3 +19,6 @@ test('Doppelte Start/Ende-Eingaben erzeugen keine Doppelintervalle',()=>{const s
 test('Planbudget und aktuelle Frage bleiben nach Wiederherstellung korrekt',()=>{const s=freshSession(template,0);start(s,1000);move(s,1,181000);const m=metrics(s,241000);assert.equal(m.plannedBefore,180000);assert.equal(m.spent,60000);assert.equal(m.active,240000);});
 test('Reservierte IDs können den Notizspeicher nicht beeinflussen',()=>{for(const id of ['__intro','__outro','__proto__','constructor','prototype']){const t=structuredClone(template);t.sections[0].questions[0].id=id;assert.throws(()=>validateInterview(t));}});
 test('Offline-Shell enthält alle benötigten statischen Dateien ohne externe Ressourcen',()=>{const root=new URL('../dist/',import.meta.url);for(const name of ['index.html','app.mjs','core.mjs','styles.css','interview.json','manifest.webmanifest','icon.svg','icon-192.png','icon-512.png'])assert.ok(fs.existsSync(new URL(name,root)),name);const html=fs.readFileSync(new URL('index.html',root),'utf8');assert.ok(!/src="https?:|href="https?:/.test(html));assert.ok(!fs.readFileSync(new URL('styles.css',root),'utf8').includes('@import'));validateInterview(JSON.parse(fs.readFileSync(new URL('beispiel-interview.json',root),'utf8')));});
+
+test('Visueller Zeitplan zeigt Vorlauf negativ und Überzug positiv',()=>{const s=freshSession(template,0);start(s,1000);move(s,1,61000);let v=visualTiming(s,121000);assert.equal(v.scheduleLabel,'−02:00');assert.equal(v.questionLabel,'−02:00');assert.ok(v.questionRatio>0&&v.questionRatio<1);v=visualTiming(s,421000);assert.equal(v.scheduleLabel,'+01:00');assert.equal(v.questionLabel,'+03:00');assert.equal(v.questionRatio,1);});
+test('Visuelle Zeitbalken halten in einer Pause an und verändern keine Protokolldaten',()=>{const s=freshSession(template,0);start(s,1000);pause(s,61000);const before=JSON.stringify(s);assert.deepEqual(visualTiming(s,62000),visualTiming(s,9999999));assert.equal(JSON.stringify(s),before);});

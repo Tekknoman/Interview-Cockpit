@@ -57,3 +57,11 @@ export function csvFor(s,now=Date.now()) {const clean=v=>{let t=String(v??'');if
 export function hash(text){let h=2166136261;for(let i=0;i<text.length;i++){h^=text.charCodeAt(i);h=Math.imul(h,16777619);}return (h>>>0).toString(16);}
 export function pack(session,revision=1,writer=''){const body=JSON.stringify({session,revision,writer});return JSON.stringify({body,checksum:hash(body)});}
 export function unpack(value){try{const p=JSON.parse(value);if(hash(p.body)!==p.checksum)return null;const b=JSON.parse(p.body);b.session=validateSession(b.session);if(!Number.isSafeInteger(b.revision)||b.revision<0)return null;return b;}catch{return null;}}
+
+// Visual timing is derived from the same persisted session as the protocol.
+export function visualTiming(s,now=Date.now()){
+ const m=metrics(s,now),q=stepsFor(s.interview)[s.current];
+ const planned=m.plannedBefore+Math.min(m.spent,q.seconds*1000);
+ const signed=ms=>(ms>=0?'+':'−')+fmt(Math.abs(ms));
+ return {totalRatio:Math.min(1,m.active/m.total),questionRatio:Math.min(1,m.spent/(q.seconds*1000)),plannedRatio:Math.min(1,planned/m.total),scheduleDelta:m.active-planned,questionDelta:m.spent-q.seconds*1000,scheduleLabel:signed(m.active-planned),questionLabel:signed(m.spent-q.seconds*1000)};
+}

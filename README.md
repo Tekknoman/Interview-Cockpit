@@ -4,7 +4,7 @@ Eine statische Web-App für ein Interview auf dem iPad. Kein Konto, keine API-Ke
 
 ## Automatisches Deployment auf GitHub Pages
 
-Der Workflow `.github/workflows/deploy-pages.yml` prüft JavaScript und führt die 16 Anwendungstests aus. Nach einem erfolgreichen Push auf **`prod`** wird der Inhalt von **`dist`** auf GitHub Pages veröffentlicht. Pull Requests nach `prod` führen nur Prüfungen aus. Über **Actions → Test and deploy Interview Cockpit → Run workflow** kann der Workflow zusätzlich manuell für `prod` gestartet werden.
+Der Workflow `.github/workflows/deploy-pages.yml` prüft JavaScript und führt die Anwendungstests aus. Nach einem erfolgreichen Push auf **`prod`** wird der Inhalt von **`dist`** auf GitHub Pages veröffentlicht. Pull Requests nach `prod` führen nur Prüfungen aus. Über **Actions → Test and deploy Interview Cockpit → Run workflow** kann der Workflow zusätzlich manuell für `prod` gestartet werden.
 
 GitHub Pages muss unter **Settings → Pages → Build and deployment → Source → GitHub Actions** ausgewählt sein. Für das Deployment sind keine eigenen Tokens oder API-Keys nötig; der Workflow nutzt den eingeschränkten `GITHUB_TOKEN` mit Pages- und OIDC-Berechtigungen. Die Site-URL steht im Deployment-Job und im `github-pages`-Environment.
 
@@ -23,7 +23,7 @@ Offizielle Anleitung: https://docs.github.com/en/pages/getting-started-with-gith
 
 - Die veröffentlichte Seite einmal **online in Safari** öffnen und warten, bis «Offline bereit» angezeigt wird. Danach einen Offline-Neustart ausprobieren.
 - Optional **Teilen → Zum Home-Bildschirm**. Für das echte Interview dieselbe Safari-Seite bzw. dieselbe installierte App verwenden; deren Speicher kann getrennt sein.
-- Mit **Aa** Schriftgrösse und helles/dunkles Erscheinungsbild einstellen. Der Fokusmodus blendet Zusatzhinweise und Themenleiste aus, die Hauptfrage bleibt gross.
+- Mit **Aa** Schriftgrösse und helles/dunkles Erscheinungsbild einstellen. Der Vollbild-/Fokusmodus zeigt Weiss auf Schwarz, nutzt den Bildschirm mit automatisch angepasster Schrift und kompakten Nachfragen und visualisiert Frage- sowie Interviewzeit mit Balken. Grün mit Minus bedeutet Zeitreserve bzw. Vorlauf, Rot mit Plus bedeutet Überziehung bzw. Verzögerung. Die weisse Markierung im Interviewzeitbalken zeigt den geplanten Zeitstand. Der ursprüngliche Übersichtsmodus behält sein bisheriges Design. Übergangshilfen lassen sich im Vollbild aufklappen. Auf Geräten ohne Fullscreen-API funktioniert dasselbe reduzierte Layout innerhalb des Browserfensters.
 - Vor dem echten Interview Lautstärke, Sync-Ton, Kamera, externes Aufnahmegerät und automatische Sperre am tatsächlichen iPad testen. Die App nimmt selbst kein Audio oder Video auf.
 - Die Bestätigungen im Startbildschirm setzen und **Interview starten**. Die ersten drei Minuten gehören zum Einstieg. Weiter zur ersten Leitfrage, sobald ihr bereit seid.
 
