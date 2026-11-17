@@ -149,3 +149,11 @@ In Resolve: **Timeline im Media Pool rechts anklicken → Timelines → Import �
 ### Leseschrift
 
 Die App verwendet lokal eingebundenes **Atkinson Hyperlegible Next** (variable Schrift, SIL Open Font License unter `dist/fonts/OFL.txt`). Quelle: [Braille Institute](https://www.brailleinstitute.org/freefont/) und [Google Fonts](https://github.com/google/fonts/tree/main/ofl/atkinsonhyperlegiblenext). Die Schrift bleibt offline verfügbar. Im Fokusmodus: helle Schrift `#f5f5f5` auf Schwarz, weisse fett gesetzte Betonungen, normale Buchstabenabstände und Zeilenhöhe 1,32. Rot und Grün kennzeichnen weiterhin ausschliesslich die Zeitabweichung.
+
+### Vollbild: links/rechts halten
+
+In der laufenden Frage links auf einer freien Fläche gedrückt halten, um zurückzugehen, rechts für die nächste Frage. Buttons, Eingabefelder, Übergang und Dialoge bleiben normal bedienbar. Die Funktion lässt sich unter **Lesen & Einstellungen → Links / rechts halten** ausschalten. Die Gesamthaltezeit ist von 300 bis 2000 ms einstellbar, standardmässig 600 ms. Nach 350 ms ist der Kreis am Berührungspunkt voll; danach bleiben mindestens 250 ms zum Loslassen und Abbrechen. Dieses feste Abbruchfenster ist eine Bedienentscheidung, keine garantierte menschliche Reaktionszeit. Bei stockender Darstellung wird das Fenster verlängert, sodass es nicht unbemerkt verstreicht.
+
+Loslassen, mehr als 18 CSS-Pixel Wegziehen, Scrollen, eine zweite Berührung, Fensterwechsel, Bildschirmsperre oder Öffnen eines Dialogs brechen die Geste ab. Pro Berührung erfolgt höchstens ein Fragenwechsel. Am Ende bleibt die Abschlussbestätigung erhalten. Der Fragenwechsel nutzt denselben protokollierten Ablauf wie die normalen Navigationsbuttons.
+
+Optional kurzes Vibrationsfeedback bei vollem Kreis und bei Auslösung, sofern Browser und Hardware es unterstützen. Die Funktion verwendet die standardisierte Vibration API und bleibt auf nicht unterstützten Geräten rein visuell. Safari/iPad bietet diese API üblicherweise nicht an; es werden keine versteckten Schalter oder Audioeffekte als Haptik-Ersatz verwendet. Die Schrifteinstellungen und das Interview bleiben unverändert gespeichert.

@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {HoldGesture,holdDuration} from '../dist/hold.mjs';
+function setup(){const progress=[],ready=[],activated=[],cancelled=[];const g=new HoldGesture({onProgress:p=>progress.push(p),onReady:s=>ready.push(s),onActivate:s=>activated.push(s),onCancel:()=>cancelled.push(true)});g.begin({id:1,x:100,y:100,direction:1,duration:600},0);return {g,progress,ready,activated,cancelled};}
+test('full circle leaves 250ms to abort, activates once at full duration',()=>{const {g,progress,ready,activated}=setup();g.frame(349);assert.ok(progress.at(-1)<1);g.frame(350);assert.equal(progress.at(-1),1);assert.equal(ready.length,1);g.frame(599);assert.equal(activated.length,0);g.frame(600);g.frame(2000);assert.equal(activated.length,1);});
+test('releasing after circle is full still cancels instead of navigating',()=>{const {g,activated,cancelled}=setup();g.frame(350);g.end(1);g.frame(600);assert.equal(activated.length,0);assert.equal(cancelled.length,1);});
+test('movement, pointer cancel, interruptions and new gestures clear pending navigation',()=>{const {g,activated}=setup();g.move(1,119,100);g.frame(1000);assert.equal(activated.length,0);g.begin({id:2,x:0,y:0,direction:-1},1000);g.cancel();g.frame(2000);assert.equal(activated.length,0);});
+test('unrelated pointer-up does not release primary hold',()=>{const {g}=setup();g.end(2);assert.ok(g.state);g.end(1);assert.equal(g.state,null);});
+test('stalled animation cannot consume the visible abort window',()=>{const {g,activated}=setup();g.frame(1200);assert.equal(activated.length,0);g.frame(1449);assert.equal(activated.length,0);g.frame(1450);assert.equal(activated.length,1);});
+test('duration is bounded, persists numeric strings, no unsafe zero/NaN',()=>{assert.equal(holdDuration('650'),650);assert.equal(holdDuration(200),300);assert.equal(holdDuration(Infinity),600);assert.equal(holdDuration('oops'),600);assert.equal(holdDuration(9000),2000);});
+test('left and right directions survive; a fresh press has a fresh reaction window',()=>{const {g,activated}=setup();g.frame(350);g.end(1);g.begin({id:2,x:0,y:0,direction:-1,duration:600},500);g.frame(850);g.frame(1100);assert.equal(activated[0].direction,-1);});

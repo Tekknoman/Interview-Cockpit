@@ -30,6 +30,7 @@ jobs:
           node --check dist/app.mjs
           node --check dist/core.mjs
           node --check dist/edl.mjs
+          node --check dist/hold.mjs
           node --check dist/sw.js
       - name: Run application tests
         run: npm test

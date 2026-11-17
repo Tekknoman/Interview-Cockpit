@@ -37,3 +37,10 @@ Dieser Bericht dokumentiert die lokale Prüfung vor dem ersten GitHub-Deployment
 - 24 Node-Tests und 16 Python-Tests erfolgreich, inklusive CSV-Roundtrip, Pausen, Sync-Segmente, kollidierende Marker und Drop-Frame-Grenzen.
 - Schrift lokal mit Lizenz eingebunden und in Offline-Cache aufgenommen. Service Worker auf v7 aktualisiert.
 - Resolve selbst ist in dieser Umgebung nicht installiert: tatsächlicher Markerimport dort noch zu prüfen.
+
+## Haltenavigation (17.11.2026)
+
+- 31 Node-Tests und 16 Python-Tests bestanden. Neue Tests prüfen das feste Abbruchfenster, vorzeitiges Loslassen, Wegziehen, Unterbrechung, Einzelauslösung und stockende Animation.
+- Browserprüfung: rechts halten wechselt vorwärts, links zurück, 450 ms bei 600 ms Einstellung löst keinen Wechsel aus. Haltezeit und Fokus bleiben nach Neuladen erhalten. Normale Buttons bleiben bedienbar.
+- Haptik ist hardwareabhängig und wurde in dieser Umgebung nicht physisch geprüft. Ein Test mit echtem iPad-Touch steht aus.
+- Offline-Cache v8 enthält das neue Gestenmodul.
