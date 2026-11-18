@@ -44,3 +44,11 @@ Dieser Bericht dokumentiert die lokale Prüfung vor dem ersten GitHub-Deployment
 - Browserprüfung: rechts halten wechselt vorwärts, links zurück, 450 ms bei 600 ms Einstellung löst keinen Wechsel aus. Haltezeit und Fokus bleiben nach Neuladen erhalten. Normale Buttons bleiben bedienbar.
 - Haptik ist hardwareabhängig und wurde in dieser Umgebung nicht physisch geprüft. Ein Test mit echtem iPad-Touch steht aus.
 - Offline-Cache v8 enthält das neue Gestenmodul.
+
+## Bereichsfarben im Vollbild (18.11.2026)
+
+- 35 Node-Tests bestanden: darunter Bereichsgrenzen, übersprungene Fragen, Rücksprünge, Einstieg und Abschluss.
+- Farben direkt aus den OOXML-Zellfüllungen der hochgeladenen Vorlage ausgelesen. D verwendet den Blauton der Gruppierungstabelle.
+- Browserprüfung bei 1363 × 936: 14 Fragepunkte, genau ein aktueller Ring, 8-px-Leiste, farbiger Bereichstitel, Kernfrage und Moderationshinweis sichtbar. Navigation passt zusammen mit geöffneter Nachfrage in den Viewport.
+- Übergabe vor B und vor C sichtbar, danach wieder ausgeblendet. Normalansicht zeigt weiterhin ihre bisherige 3-px-Leiste; neue Elemente dort ausgeblendet.
+- Kein physischer iPad-Test. Offline-Cache v10 enthält das neue Darstellungsmodul.

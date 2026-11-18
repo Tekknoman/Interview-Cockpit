@@ -163,3 +163,11 @@ Optional kurzes Vibrationsfeedback bei vollem Kreis und bei Auslösung, sofern B
 Der Standardleitfaden enthält seit 18.11.2026 belegte Bezüge zu Unternehmertum, BWZ-Unterricht, OneNote / selbstorganisiertem Lernen und Innovationscoaching. [Recherche mit Quellen, Gesprächsanlässen und offenen Punkten](research/Markus-Graf-Colombo-Interviewbezug.md). [Separate Importdatei](dist/interview-markus-persoenlich.json).
 
 Bestehende Sitzungen behalten ihren eingebetteten Leitfaden. Nach App-Aktualisierung unter **Interview laden → Standardinterview neu starten** übernehmen; zuerst die bisherige Sitzung als Backup sichern. Die Struktur bleibt bei 14 Hauptfragen und 55 Minuten. Zusatznachfragen sind Alternativen, keine zusätzliche Fragenliste zum vollständigen Abarbeiten.
+
+### Vollbild mit Bereichsfarben und Fragepunkten
+
+Die Vollbild-Fragenleiste ist 8 px hoch und in die Themenbereiche gegliedert. Jede Frage erhält einen gleichmässig verteilten Punkt; Bereichsbreiten folgen der Anzahl Fragen, nicht den Minutenbudgets. Abgeschlossene Fragen sind kräftig, kommende und übersprungene Fragen blass. Die aktuelle Frage hat einen grösseren offenen Ring. Die Zeitbalken bleiben eine separate Darstellung des Zeitbudgets.
+
+Farben aus der Gruppierungstabelle der bereitgestellten Datei `Interview-Leitfaden.docx`: A Pfirsich `#FAE2D5`, B Grün `#C1F0C7`, C Rosa `#F2CEED`, D Hellblau `#CAEDFB`, E Gelb `#FFFFCC`. Für D enthält die Fragentabelle das leicht abweichende `#C1E4F5`; verwendet wird die Farbe der Bereichsübersicht.
+
+Bereichstitel, Position im Bereich und Kernfrage sind im Vollbild sichtbar. Moderationshinweise und Wiederholungsbesuche werden ebenfalls eingeblendet und bei der automatischen Anpassung der Frage berücksichtigt. Auf der letzten Frage eines Bereichs kündigt rechts eine dezente Markierung in der Farbe des nächsten Bereichs die Übergabe an. Nach Bereich E erscheint keine weitere Bereichsübergabe. Normalansicht, Navigation und Protokollierung behalten ihr Verhalten.
