@@ -157,3 +157,9 @@ In der laufenden Frage links auf einer freien Fläche gedrückt halten, um zurü
 Loslassen, mehr als 18 CSS-Pixel Wegziehen, Scrollen, eine zweite Berührung, Fensterwechsel, Bildschirmsperre oder Öffnen eines Dialogs brechen die Geste ab. Pro Berührung erfolgt höchstens ein Fragenwechsel. Am Ende bleibt die Abschlussbestätigung erhalten. Der Fragenwechsel nutzt denselben protokollierten Ablauf wie die normalen Navigationsbuttons.
 
 Optional kurzes Vibrationsfeedback bei vollem Kreis und bei Auslösung, sofern Browser und Hardware es unterstützen. Die Funktion verwendet die standardisierte Vibration API und bleibt auf nicht unterstützten Geräten rein visuell. Safari/iPad bietet diese API üblicherweise nicht an; es werden keine versteckten Schalter oder Audioeffekte als Haptik-Ersatz verwendet. Die Schrifteinstellungen und das Interview bleiben unverändert gespeichert.
+
+### Persönliche Bezüge zu Markus Graf Colombo
+
+Der Standardleitfaden enthält seit 18.11.2026 belegte Bezüge zu Unternehmertum, BWZ-Unterricht, OneNote / selbstorganisiertem Lernen und Innovationscoaching. [Recherche mit Quellen, Gesprächsanlässen und offenen Punkten](research/Markus-Graf-Colombo-Interviewbezug.md). [Separate Importdatei](dist/interview-markus-persoenlich.json).
+
+Bestehende Sitzungen behalten ihren eingebetteten Leitfaden. Nach App-Aktualisierung unter **Interview laden → Standardinterview neu starten** übernehmen; zuerst die bisherige Sitzung als Backup sichern. Die Struktur bleibt bei 14 Hauptfragen und 55 Minuten. Zusatznachfragen sind Alternativen, keine zusätzliche Fragenliste zum vollständigen Abarbeiten.

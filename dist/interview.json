@@ -1,29 +1,204 @@
 {
- "version":1,"title":"Erfolgreiche Kommunikation","guest":"Markus Graf Colombo","introSeconds":180,"outroSeconds":120,
- "sections":[
-  {"id":"A","title":"Verständnis & Entwicklung","color":"mint","questions":[
-   {"id":"q1","seconds":180,"essential":true,"text":"Woran erkennen Sie nach einem Gespräch, dass es **erfolgreich** war?","followUps":["Können Sie das an einem **konkreten Gespräch** zeigen?"],"transition":"Zum Einstieg möchten wir verstehen, was ein gutes Gespräch für Sie ausmacht.","hint":"Erst seine eigenen Erfolgskriterien hören. Noch keine Definition vorgeben."},
-   {"id":"q2","seconds":180,"text":"Welche **Erfahrung** hat Ihre heutige Art, Gespräche zu führen, besonders **geprägt**?","followUps":["Was machen Sie **seitdem anders**?"],"transition":"Sie haben beschrieben, worauf es Ihnen ankommt. Wie hat sich das entwickelt?","hint":"Eine prägende Erfahrung vertiefen, keine vollständige Biografie abfragen."}
-  ]},
-  {"id":"B","title":"Gestaltung & Verständnis","color":"blue","questions":[
-   {"id":"q3","seconds":240,"essential":true,"text":"Wie gestalten Sie die **ersten Minuten** eines Gesprächs mit jemandem, den Sie **noch nicht kennen**?","followUps":["Was **sagen oder fragen** Sie tatsächlich zuerst?"],"transition":"Wir möchten nun genauer verstehen, wie Sie solche Gespräche konkret gestalten.","hint":"Von allgemeinen Prinzipien zu beobachtbarem Verhalten kommen."},
-   {"id":"q4","seconds":180,"text":"Was **verändern** Sie an Ihrer Gesprächsführung, wenn Sie statt mit einer **lernenden Person** mit einer **Geschäftsleitung** sprechen?","followUps":["Was bleibt **unabhängig vom Gegenüber** gleich?"],"transition":"Sie kennen sehr unterschiedliche Gesprächspartner. Schauen wir auf diesen Wechsel.","hint":"Vergleichen lassen, ohne Jugendlichen oder Führungspersonen Eigenschaften zuzuschreiben."},
-   {"id":"q5","seconds":240,"essential":true,"text":"Wie **überprüfen** Sie, ob Ihr Gegenüber Sie so **verstanden** hat, wie Sie es gemeint haben?","followUps":["Erinnern Sie sich an einen Fall, in dem ein **zustimmendes Nicken getäuscht** hat?"],"transition":"Auch eine klare Erklärung kann anders ankommen als beabsichtigt.","hint":"Verständnis und Zustimmung unterscheiden. Ein Beispiel nachfragen."}
-  ]},
-  {"id":"C","title":"Schwierige Gespräche","color":"amber","questions":[
-   {"id":"q6","seconds":360,"essential":true,"text":"Erzählen Sie uns von einem besonders **schwierigen Gespräch**, an dem Sie **selbst beteiligt** waren.","followUps":["Was war der **entscheidende Moment**?","Was **sagten Sie dann** möglichst wörtlich?","Wie hat Ihr Gegenüber **darauf reagiert**?"],"transition":"Können wir Ihre Vorgehensweise an einer schwierigen Situation vertiefen?","hint":"Kernfall des Interviews. Zeit lassen. Situation bei Bedarf anonymisieren."},
-   {"id":"q7","seconds":240,"essential":true,"text":"Woran haben Sie in dieser Situation **erkannt**, worum es Ihrem **Gegenüber** ging?","followUps":["Welche **Nachfrage oder Reaktion** half Ihnen dabei?"],"transition":"Bleiben wir bei dieser Situation und schauen auf die andere Perspektive.","hint":"An den tatsächlichen Fall anknüpfen. Beobachtung von Interpretation trennen."},
-   {"id":"q8","seconds":240,"text":"Wie gehen Sie vor, wenn eine Person Ihren **Vorschlag ablehnt**?","followUps":["Wann haben Sie daraufhin Ihren **eigenen Vorschlag geändert**?"],"transition":"Nicht immer entsteht gleich Einigkeit. Wie gehen Sie mit einer Ablehnung um?","hint":"Widerstand nicht automatisch als Uneinsichtigkeit behandeln."},
-   {"id":"q9","seconds":180,"text":"Wie sprechen Sie ein **Problem** an, das jemand vermutlich **ungern hört**?","followUps":["Können Sie uns eine typische **erste Formulierung** nennen?"],"transition":"Manchmal muss man selbst etwas Unangenehmes ansprechen.","hint":"Konkrete Worte erfragen. Noch nicht selbst bewerten."},
-   {"id":"q10","seconds":240,"essential":true,"text":"Welches Gespräch ist Ihnen **trotz guter Absicht misslungen**?","followUps":["Welchen **Anteil hatten Sie selbst** daran?","Was würden Sie **heute anders** machen?"],"transition":"Wir haben über Vorgehensweisen gesprochen. Uns interessieren auch deren Grenzen.","hint":"Wertschätzend nach dem eigenen Anteil fragen. Schweigen kurz aushalten."}
-  ]},
-  {"id":"D","title":"Methoden & Kanäle","color":"violet","questions":[
-   {"id":"q11","seconds":180,"text":"Wann entscheiden Sie sich im Coaching für eine **Frage** statt für einen **direkten Rat**?","followUps":["Woran erkennen Sie, dass jetzt eine **klare Antwort nötig** ist?"],"transition":"Welche bewussten Methoden helfen Ihnen bei solchen Entscheidungen?","hint":"Keinen grundsätzlichen Vorrang von Fragen unterstellen."},
-   {"id":"q12","seconds":180,"text":"Welche Rolle spielen **Kommunikationsmodelle** in Ihrer Praxis?","followUps":["Gibt es eine Situation, in der ein Modell Ihnen **nicht weitergeholfen** hat?"],"transition":"Lassen sich Ihre Erfahrungen mit theoretischen Modellen verbinden?","hint":"Modellnutzung nicht voraussetzen. Später mit den Kursmodellen vergleichen."},
-   {"id":"q13","seconds":180,"text":"Was gelingt Ihnen im **persönlichen Gespräch** leichter als **per Video oder schriftlich**?","followUps":["Wann wählen Sie **bewusst einen anderen Kanal**?"],"transition":"Auch der Rahmen eines Gesprächs kann einen Unterschied machen.","hint":"Vorteile und Grenzen vergleichen, keinen Kanal vorab als besser bewerten."}
-  ]},
-  {"id":"E","title":"Transfer & Ausblick","color":"rose","questions":[
-   {"id":"q14","seconds":180,"essential":true,"text":"Welches **Gesprächsverhalten** sollten wir als Studierende als **Erstes bewusst üben**?","followUps":["Welche **wichtige Frage** haben wir Ihnen bisher **nicht gestellt**?"],"transition":"Zum Abschluss möchten wir den Blick auf unsere eigene Kommunikation richten.","hint":"Eine konkret umsetzbare Übung mitnehmen. Raum für Ergänzungen lassen."}
-  ]}
- ]
+  "version": 1,
+  "title": "Erfolgreiche Kommunikation",
+  "guest": "Markus Graf Colombo",
+  "introSeconds": 180,
+  "outroSeconds": 120,
+  "sections": [
+    {
+      "id": "A",
+      "title": "Verständnis & Entwicklung",
+      "color": "mint",
+      "questions": [
+        {
+          "id": "q1",
+          "seconds": 180,
+          "essential": true,
+          "text": "Woran erkennen Sie nach einem Gespräch, dass es **erfolgreich** war?",
+          "followUps": [
+            "Können Sie das an einem **konkreten Gespräch** zeigen?"
+          ],
+          "transition": "Sie kennen Kommunikation als Unternehmer, Lehrperson und Coach. Uns interessiert zuerst Ihr eigener Massstab für ein gutes Gespräch.",
+          "hint": "Erst seine eigenen Erfolgskriterien hören. Noch keine Definition vorgeben."
+        },
+        {
+          "id": "q2",
+          "seconds": 180,
+          "text": "Welche **Erfahrung** hat Ihre heutige Art, Gespräche zu führen, besonders **geprägt**?",
+          "followUps": [
+            "Was machen Sie **seitdem anders**?",
+            "Falls passend: Was mussten Sie beim Wechsel zwischen **Unternehmertum, Unterricht und Coaching** in Ihrer Gesprächsführung neu lernen?"
+          ],
+          "transition": "Sie haben in einem internationalen Produktions- und Handelsbetrieb gearbeitet sowie unterrichtet und beraten. Welche Erfahrungen aus diesen unterschiedlichen Rollen wirken bis heute nach?",
+          "hint": "INOS belegt die unterschiedlichen Rollen, aber keine lückenlose zeitliche Abfolge. Einen Rollenwechsel erfragen, nicht als geradlinigen Berufswechsel voraussetzen. Eine Erfahrung vertiefen."
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Gestaltung & Verständnis",
+      "color": "blue",
+      "questions": [
+        {
+          "id": "q3",
+          "seconds": 240,
+          "essential": true,
+          "text": "Wie gestalten Sie die **ersten Minuten** eines Gesprächs mit jemandem, den Sie **noch nicht kennen**?",
+          "followUps": [
+            "Was **sagen oder fragen** Sie tatsächlich zuerst?",
+            "Wie klären Sie, ob die Geschäftsleitung zunächst **Rat oder einen Gesprächspartner zum Sortieren** sucht?"
+          ],
+          "transition": "Bei INOS begleiten Sie KMU bei Innovationsvorhaben. Nehmen wir den ersten Kontakt mit einem Unternehmen, dessen Situation Sie noch nicht kennen.",
+          "hint": "Von allgemeinen Prinzipien zu beobachtbarem Verhalten kommen."
+        },
+        {
+          "id": "q4",
+          "seconds": 180,
+          "text": "Was **verändern** Sie an Ihrer Gesprächsführung, wenn Sie statt mit **Lernenden am BWZ** mit einer **Geschäftsleitung** sprechen?",
+          "followUps": [
+            "Was bleibt **unabhängig vom Gegenüber** gleich?",
+            "Können Sie **dieselbe schwierige Botschaft** einmal für Lernende und einmal für eine Geschäftsleitung formulieren?"
+          ],
+          "transition": "Die Good-Practice-Studie von 2019 beschreibt Ihre Arbeit als Lehrperson für Wirtschaft und Recht am BWZ Rapperswil-Jona. Gleichzeitig kennen Sie die Beratung von Unternehmen.",
+          "hint": "Quelle: Seufert/Tarantini 2019, S. 4 und 13–14. Historisch belegte Lehrtätigkeit; keine heutige Anstellung voraussetzen. Zwei Zielgruppen vergleichen, keine Eigenschaften unterstellen."
+        },
+        {
+          "id": "q5",
+          "seconds": 240,
+          "essential": true,
+          "text": "Wie **überprüfen** Sie, ob Ihr Gegenüber Sie so **verstanden** hat, wie Sie es gemeint haben?",
+          "followUps": [
+            "Erinnern Sie sich an einen Fall, in dem ein **zustimmendes Nicken getäuscht** hat?",
+            "Bei Ihren **OneNote-Lernaufträgen**: Woran merkten Sie, ob Lernende die Aufgabe wirklich verstanden hatten?"
+          ],
+          "transition": "Auch eine klare Erklärung kann anders ankommen als beabsichtigt.",
+          "hint": "Studie 2019, S. 14: strukturierte Lernaufträge in OneNote. Die zweite Nachfrage nur verwenden, wenn noch kein anschauliches Beispiel vorliegt. Verständnis und Zustimmung unterscheiden."
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Schwierige Gespräche",
+      "color": "amber",
+      "questions": [
+        {
+          "id": "q6",
+          "seconds": 360,
+          "essential": true,
+          "text": "Erzählen Sie uns von einem besonders **schwierigen Gespräch**, an dem Sie **selbst beteiligt** waren.",
+          "followUps": [
+            "Was war der **entscheidende Moment**?",
+            "Was **sagten Sie dann** möglichst wörtlich?",
+            "Wie hat Ihr Gegenüber **darauf reagiert**?"
+          ],
+          "transition": "Sie haben sowohl unternehmerische Verantwortung getragen als auch unterrichtet und beraten. Wählen Sie aus einem dieser Bereiche ein Gespräch, das Ihnen besonders in Erinnerung geblieben ist.",
+          "hint": "Kernfall des Interviews. Er wählt selbst eine tatsächlich erlebte Situation. Keine Krise, Kündigung oder Familiengeschichte unterstellen. Namen und betriebliche Details bei Bedarf anonymisieren."
+        },
+        {
+          "id": "q7",
+          "seconds": 240,
+          "essential": true,
+          "text": "Woran haben Sie in dieser Situation **erkannt**, worum es Ihrem **Gegenüber** ging?",
+          "followUps": [
+            "Welche **Nachfrage oder Reaktion** half Ihnen dabei?"
+          ],
+          "transition": "Bleiben wir bei dieser Situation und schauen auf die andere Perspektive.",
+          "hint": "Beim von ihm gewählten Fall bleiben. Nicht mitten in der Erzählung zu einer recherchierten Station wechseln. Beobachtung von Interpretation trennen."
+        },
+        {
+          "id": "q8",
+          "seconds": 240,
+          "text": "Wie gehen Sie vor, wenn eine Person Ihren **Vorschlag ablehnt**?",
+          "followUps": [
+            "Wann haben Sie daraufhin Ihren **eigenen Vorschlag geändert**?",
+            "Falls passend: Gab es bei einem **Innovationsvorhaben** einen Einwand, der sich später als hilfreich herausstellte?"
+          ],
+          "transition": "INOS beschreibt Ihre Arbeit an neuen Geschäftsmodellen und deren Umsetzung. Dort müssen unterschiedliche Sichtweisen besprochen werden. Wie gehen Sie grundsätzlich mit Ablehnung um?",
+          "hint": "Keine konkrete Ablehnung als bekannt ausgeben. Vorherigen Fall weiterführen, wenn er bereits passt; Innovationsbeispiel ist eine Alternative, keine zusätzliche Pflichtfrage."
+        },
+        {
+          "id": "q9",
+          "seconds": 180,
+          "text": "Wie sprechen Sie ein **Problem** an, das jemand vermutlich **ungern hört**?",
+          "followUps": [
+            "Können Sie uns eine typische **erste Formulierung** nennen?",
+            "Wie verändert sich diese Formulierung, wenn Sie **selbst führen** oder als **externer Berater** auftreten?",
+            "Nur falls Sie möchten: Gibt es aus Ihrem **Engagement für Ammern** ein Gespräch, das **Fingerspitzengefühl** brauchte?"
+          ],
+          "transition": "Manchmal muss man selbst etwas Unangenehmes ansprechen.",
+          "hint": "Ammern: öffentliches LinkedIn-Profil nennt Gönner / Projekte seit 2017. Freiwilliger persönlicher Bezug, keine Leitungsrolle oder Konflikte unterstellen. Nur eine passende Nachfrage auswählen."
+        },
+        {
+          "id": "q10",
+          "seconds": 240,
+          "essential": true,
+          "text": "Welches Gespräch ist Ihnen **trotz guter Absicht misslungen**?",
+          "followUps": [
+            "Welchen **Anteil hatten Sie selbst** daran?",
+            "Was würden Sie **heute anders** machen?"
+          ],
+          "transition": "Wir haben über Vorgehensweisen gesprochen. Uns interessieren auch deren Grenzen.",
+          "hint": "Wertschätzend nach eigenem Anteil fragen. Er bestimmt den Bereich und die Grenzen. Aus öffentlichen Rollen lässt sich kein persönliches Scheitern ableiten. Schweigen kurz aushalten."
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Methoden & Kanäle",
+      "color": "violet",
+      "questions": [
+        {
+          "id": "q11",
+          "seconds": 180,
+          "text": "Wann entscheiden Sie sich im Coaching für eine **Frage** statt für einen **direkten Rat**?",
+          "followUps": [
+            "Woran erkennen Sie, dass jetzt eine **klare Antwort nötig** ist?",
+            "Was haben Sie aus dem **selbstorganisierten Lernen** über gute Fragen gelernt, das Sie in der **KMU-Beratung** verwenden können?"
+          ],
+          "transition": "Die Studie über Ihren Unterricht beschreibt, wie Lernende selbständig arbeiten und Sie bei Fragen als Coach beiziehen. Diese Rolle kennen Sie auch aus der Unternehmensberatung.",
+          "hint": "Quelle: Seufert/Tarantini 2019, S. 13–14. Transfer erfragen, nicht voraussetzen. Die beiden Nachfragen sind Alternativen je nach Antwort."
+        },
+        {
+          "id": "q12",
+          "seconds": 180,
+          "text": "Welche Rolle spielen **Kommunikationsmodelle** in Ihrer Praxis?",
+          "followUps": [
+            "Gibt es eine Situation, in der ein Modell Ihnen **nicht weitergeholfen** hat?",
+            "Falls Sie Modelle einsetzen: Welches würden Sie einer **jungen Führungsperson** anhand eines eigenen Beispiels erklären?"
+          ],
+          "transition": "Lassen sich Ihre Erfahrungen mit theoretischen Modellen verbinden?",
+          "hint": "Modellnutzung nicht voraussetzen. Später mit den Kursmodellen vergleichen."
+        },
+        {
+          "id": "q13",
+          "seconds": 180,
+          "text": "Was gelingt Ihnen im **persönlichen Gespräch** leichter als **per Video oder schriftlich**?",
+          "followUps": [
+            "Wann wählen Sie **bewusst einen anderen Kanal**?",
+            "Was mussten Sie bei **schriftlichen Lernaufträgen** ausdrücklich formulieren, das Sie im persönlichen Gespräch unmittelbar klären konnten?"
+          ],
+          "transition": "Sie haben digitale Lernumgebungen mit OneNote genutzt. Schauen wir deshalb darauf, was die Wahl des Kommunikationskanals verändert.",
+          "hint": "Digitales Kursmanagement ist belegt, persönliche Corona-Erlebnisse oder bestimmte Videoplattformen nicht. Keine Zuständigkeit für aktuelle Lernfenster-Beiträge voraussetzen."
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "title": "Transfer & Ausblick",
+      "color": "rose",
+      "questions": [
+        {
+          "id": "q14",
+          "seconds": 180,
+          "essential": true,
+          "text": "Welches **Gesprächsverhalten** sollten wir als Studierende als **Erstes bewusst üben**?",
+          "followUps": [
+            "Welche **wichtige Frage** haben wir Ihnen bisher **nicht gestellt**?"
+          ],
+          "transition": "Sie haben Lernende begleitet und beraten Unternehmen. Welche konkrete Übung aus diesem Erfahrungsschatz würden Sie uns für unsere nächsten Gespräche mitgeben?",
+          "hint": "Eine konkret umsetzbare Übung mitnehmen. Raum für Ergänzungen lassen."
+        }
+      ]
+    }
+  ]
 }
