@@ -171,3 +171,7 @@ Die Vollbild-Fragenleiste ist 8 px hoch und in die Themenbereiche gegliedert. Je
 Farben aus der Gruppierungstabelle der bereitgestellten Datei `Interview-Leitfaden.docx`: A Pfirsich `#FAE2D5`, B Grün `#C1F0C7`, C Rosa `#F2CEED`, D Hellblau `#CAEDFB`, E Gelb `#FFFFCC`. Für D enthält die Fragentabelle das leicht abweichende `#C1E4F5`; verwendet wird die Farbe der Bereichsübersicht.
 
 Bereichstitel, Position im Bereich und Kernfrage sind im Vollbild sichtbar. Moderationshinweise und Wiederholungsbesuche werden ebenfalls eingeblendet und bei der automatischen Anpassung der Frage berücksichtigt. Auf der letzten Frage eines Bereichs kündigt rechts eine dezente Markierung in der Farbe des nächsten Bereichs die Übergabe an. Nach Bereich E erscheint keine weitere Bereichsübergabe. Normalansicht, Navigation und Protokollierung behalten ihr Verhalten.
+
+### App aktualisieren und zurücksetzen
+
+Unter **Einstellungen → App aktualisieren und zurücksetzen …** kannst du zuerst ein Sitzungs-Backup herunterladen. Mit **Abbrechen** gelangst du zurück. Erst **Alles zurücksetzen und neu laden** prüft die App-Version und öffnet eine frische Sitzung mit dem Standardleitfaden und den Standardeinstellungen. Dafür das Gerät mit dem Internet verbinden. Bereits heruntergeladene Exporte bleiben erhalten.
